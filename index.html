@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <link rel="icon" href="assets/Logo_01.png" />
+        <title>School of Media Studies</title>
+
+        <style>
+            h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+            #bordering1 {
+            	border: 10px solid transparent;
+            	padding: 15px;
+            	border-image: url(assets/bannerframe.png) 10 fill;
+            }
+            #bordering2 {
+            	border: 20px solid transparent;
+            	border-image: url(assets/subframe.png) 30 fill;
+            }
+            .topnav {
+              background-color: #3a3a3a;
+              margin-bottom:0px;
+            }
+            .topnav .logo { position: absolute; z-index:1; top:0; }
+            .topnav ul.nav li { float: center; list-style:none; }
+            .topnav .nav a {
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+
+            .topnav a:hover {
+              background-color: #fcdb04;
+              color: black;
+            }
+
+            .topnav .icon {
+              display: none;
+            }
+
+            @media screen and (max-width: 600px) {
+              .topnav a:not(:first-child) {display: none;}
+              .topnav a.icon {
+            	float: right;
+            	display: block;
+              }
+            }
+
+            @media screen and (max-width: 600px) {
+              .topnav.responsive {position: relative;}
+              .topnav.responsive .icon {
+            	position: absolute;
+            	right: 0;
+            	top: 0;
+              }
+              .topnav.responsive a {
+            	float: none;
+            	display: block;
+            	text-align: left;
+              }
+
+              .topnav {
+            	background-color: #134095;
+              }
+
+              .topnav a {
+            	color: white;
+              }
+              .topnav .nav .active {
+              color:}
+
+            .container {
+              padding-right: 15px;
+              padding-left: 15px;
+              margin-right: auto;
+              margin-left: auto;
+            }
+            @media (min-width: 768px) {
+              .container {
+            	width: 750px;
+              }
+            }
+            @media (min-width: 992px) {
+              .container {
+            	width: 970px;
+              }
+            }
+            @media (min-width: 1200px) {
+              .container {
+            	width: 1170px;
+              }
+            }
+        </style>
+    </head>
+
+    <body style="background-color: #3a3a3a;">
+        <!-- Navigation Bar -->
+        <div class="topnav fixed-top" id="myTopnav">
+            <div class="container">
+                <a href="https://www.mapua.edu.ph/ApplyNow.aspx" target="_blank"><img src="assets/ApplyNow_Static.png" id="applynowbtn" width="15%" style="z-index: 1; position: absolute; right: 150px; top: -20px;" /></a>
+                <p class="logo" style="z-index: 1; position: absolute;"><img src="assets/Logo_01.png" width="50%" /></p>
+
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link active text-dark" href="index.html" style="background-color: #fcdb04;">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">FACULTY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="awards.html">AWARDS</a></li>
+                </ul>
+
+                <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div id="content" style="background-color: #3a3a3a;">
+            <video width="100%" height="100%" autoplay="" muted="" loop="" id="change" >
+                <source src="videos/mainbanner.mp4" type="video/mp4" />
+            </video>
+
+            <div style="position: absolute; margin-top: -50px; margin-left: 150px;">
+                <center>
+                    <span data-bs-toggle="collapse" href="#gallery1" role="button" aria-expanded="false" aria-controls="gallery1">
+                        <img style="margin-left: 15px; margin-right: 15px; position: relative; z-index: 1000;" src="assets/MAbutton_static.png" class="gallerybtn1" width="8%" />
+                    </span>
+                    <span data-bs-toggle="collapse" href="#gallery2" role="button" aria-expanded="false" aria-controls="gallery2">
+                        <img style="margin-left: 15px; margin-right: 15px; position: relative; z-index: 1000;" src="assets/DJbutton_static.png" class="gallerybtn2" width="8%" />
+                    </span>
+                    <span data-bs-toggle="collapse" href="#gallery3" role="button" aria-expanded="false" aria-controls="gallery3">
+                        <img style="margin-left: 15px; margin-right: 15px; position: relative; z-index: 1000;" src="assets/DFbutton_static.png" class="gallerybtn3" width="8%" />
+                    </span>
+                    <span data-bs-toggle="collapse" href="#gallery4" role="button" aria-expanded="false" aria-controls="gallery4">
+                        <img style="margin-left: 15px; margin-right: 15px; position: relative; z-index: 1000;" src="assets/BMbutton_static.png" class="gallerybtn4" width="8%" />
+                    </span>
+                    <span data-bs-toggle="collapse" href="#gallery5" role="button" aria-expanded="false" aria-controls="gallery5">
+                        <img style="margin-left: 15px; margin-right: 15px; position: relative; z-index: 1000;" src="assets/ADbutton_static.png" class="gallerybtn5" width="8%" />
+                    </span>
+                </center>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <div id="galleryparent" style="background-image: url('assets/BannerMenu_BG.png'); background-size: 100% 100%;">
+            <div class="container text-white collapse multi-collapse text-center" id="gallery1" data-bs-parent="#galleryparent">
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 class="display-5 fw-bold lh-1 mb-3">Multimedia Arts</h1>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal1"><img src="images/1MultimediaArts/MApic01.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal2"><img src="images/1MultimediaArts/MApic02.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal3"><img src="images/1MultimediaArts/MApic03.png" width="85%" /></a>
+                    </div>
+                </div>
+                <br />
+                <a data-bs-toggle="collapse" href="#gallery1" role="button" aria-expanded="true" aria-controls="gallery1"><img src="assets/return_static.png" class="gallerybtn6" width="50%" class="mt-3" /></a>
+            </div>
+
+            <div class="container text-white collapse multi-collapse text-center" id="gallery2" data-bs-parent="#galleryparent">
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 class="display-5 fw-bold lh-1 mb-3">Digital Journalism</h1>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal4"><img src="images/2DigitalJournalism/DJpic01.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal5"><img src="images/2DigitalJournalism/DJpic02.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal6"><img src="images/2DigitalJournalism/DJpic03.png" width="85%" /></a>
+                    </div>
+                </div>
+                <br />
+                <a data-bs-toggle="collapse" href="#gallery2" role="button" aria-expanded="true" aria-controls="gallery2"><img src="assets/return_static.png" class="gallerybtn6" width="50%" class="mt-3" /></a>
+            </div>
+
+            <div class="container text-white collapse multi-collapse text-center" id="gallery3" data-bs-parent="#galleryparent">
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 class="display-5 fw-bold lh-1 mb-3">Digital Film</h1>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal7"><img src="images/3DigitalFilm/DFpic01.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal8"><img src="images/3DigitalFilm/DFpic02.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal9"><img src="images/3DigitalFilm/DFpic03.png" width="85%" /></a>
+                    </div>
+                </div>
+                <br />
+                <a data-bs-toggle="collapse" href="#gallery3" role="button" aria-expanded="true" aria-controls="gallery3"><img src="assets/return_static.png" class="gallerybtn6" width="50%" class="mt-3" /></a>
+            </div>
+
+            <div class="container text-white collapse multi-collapse text-center" id="gallery4" data-bs-parent="#galleryparent">
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 class="display-5 fw-bold lh-1 mb-3">Broadcast Media</h1>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal10"><img src="images/4BroadcastMedia/BMpic01.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal11"><img src="images/4BroadcastMedia/BMpic02.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal12"><img src="images/4BroadcastMedia/BMpic03.png" width="85%" /></a>
+                    </div>
+                </div>
+                <br />
+                <a data-bs-toggle="collapse" href="#gallery4" role="button" aria-expanded="true" aria-controls="gallery4"><img src="assets/return_static.png" class="gallerybtn6" width="50%" class="mt-3" /></a>
+            </div>
+
+            <div class="container text-white collapse multi-collapse text-center" id="gallery5" data-bs-parent="#galleryparent">
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 class="display-5 fw-bold lh-1 mb-3">Advertising Design</h1>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal13"><img src="images/5AdvertisingDesign/ADpic01.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal14"><img src="images/5AdvertisingDesign/ADpic02.png" width="85%" /></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#myModal15"><img src="images/5AdvertisingDesign/ADpic03.png" width="85%" /></a>
+                    </div>
+                </div>
+                <br />
+                <a data-bs-toggle="collapse" href="#gallery5" role="button" aria-expanded="true" aria-controls="gallery5"><img src="assets/return_static.png" class="gallerybtn6" width="50%" class="mt-3" /></a>
+            </div>
+        </div>
+
+        <!-- Building Section -->
+        <div class="container col-xxl-8 px-4 py-2 text-white">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Campus</h1>
+                    <p class="lead fs-5" align="justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis elit eget sem pellentesque accumsan ut eget arcu. Vestibulum volutpat nec ipsum eget luctus. Suspendisse potenti. Pellentesque sed nisi eget dolor
+                        pulvinar porttitor. Quisque libero ipsum, fringilla laoreet massa sed, lobortis dictum lorem. Nam eget purus id justo bibendum convallis nec ut massa. Suspendisse potenti. Donec lacus sapien, tempus eu est eget,
+                        blandit molestie leo. Cras rutrum a nibh id vulputate.
+                    </p>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#myModal16"><img src="images/Campus/Campuspic.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" /></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Classroom Section -->
+        <div class="container col-xxl-8 px-4 py-2 text-white">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="assets/home1.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Facilities</h1>
+                    <p class="lead" align="justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis elit eget sem pellentesque accumsan ut eget arcu. Vestibulum volutpat nec ipsum eget luctus. Suspendisse potenti. Pellentesque sed nisi eget dolor
+                        pulvinar porttitor. Quisque libero ipsum, fringilla laoreet massa sed, lobortis dictum lorem. Nam eget purus id justo bibendum convallis nec ut massa. Suspendisse potenti. Donec lacus sapien, tempus eu est eget,
+                        blandit molestie leo. Cras rutrum a nibh id vulputate.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Equipment Section -->
+        <div class="container col-xxl-8 px-4 py-2 text-white">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Equipment</h1>
+                    <p class="lead" align="justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis elit eget sem pellentesque accumsan ut eget arcu. Vestibulum volutpat nec ipsum eget luctus. Suspendisse potenti. Pellentesque sed nisi eget dolor
+                        pulvinar porttitor. Quisque libero ipsum, fringilla laoreet massa sed, lobortis dictum lorem. Nam eget purus id justo bibendum convallis nec ut massa. Suspendisse potenti. Donec lacus sapien, tempus eu est eget,
+                        blandit molestie leo. Cras rutrum a nibh id vulputate.
+                    </p>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#myModal18"><img src="images/Equipment/Equippic.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" /></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="" style="background-image: url('assets/SocMedBG.png'); background-size: 100% 100%;">
+            <div class="row g-5 py-5">
+                <div class="col-lg-6 text-center">
+                    <a href="https://www.facebook.com/smsmapuauniv/" target="_blank"><img id="fbpic" src="assets/Fb_Static.png" width="30%"></a>
+                </div>
+                <div class=" text-center col-lg-6">
+                    <a href="https://www.instagram.com/mapuaunivsms/" target="_blank"><img id="instapic" src="assets/Insta_Static.png" width="30%"></a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <!-- Footer -->
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">© 2022 School of Media Studies</p>
+        </footer>
+    </body>
+</html>
+
+<!-- **************************************************************************************** -->
+
+<div class="modal" id="myModal1" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /> -->
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/1MultimediaArts/MA01.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            Be the next big thing in graphic design or visual
+							arts. This program will equip you with the
+							necessary skills in contemporary and traditional
+							art focusing on the in-depth technical process
+							of concept design, visual development, and art
+							execution through 2D and 3D animation,
+							graphics, and video.
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/bmma/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal2"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal2" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal1"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/1MultimediaArts/MA02.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            This program teach students to have the ability
+							to design and communicate effectively across
+							different media platforms, demonstrate proficiency
+							in traditional and techinical arts for multimedia
+							production, exhibit creative and innovative thinking,
+							and many more....
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/bmma/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal3"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal3" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal2"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/1MultimediaArts/MA03.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            Graduates of this program can become
+							Animators, Graphic Designers, and Illustrators, 
+							Publish Magazines and Newspapers, work in the Fashion 
+							Industry, Movie and Video Productions, and Game Development.
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/bmma/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /> -->
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- **************************************************************************************** -->
+
+<div class="modal" id="myModal4" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /> -->
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/2DigitalJournalism/DJ01.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            This is the new age of journalism. Deliver news and information using
+							new media platforms. Aside from learning
+							about the basics of print and traditional
+							journalism, this program will train you to
+							effectively report the right information in the
+							digital world. 
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/dja/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal5"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal5" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal4"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/2DigitalJournalism/DJ02.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            This program teach students to have the ability
+							to apply news values and interest in story selection,
+							gather relevant and valid sets of information from
+							proper sources, learn the methods and techniques of
+							data gathering, organizing the structure of information
+							using media platforms, and many more...
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/dja/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal6"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal6" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal5"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/2DigitalJournalism/DJ03.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            Graduates of this program can become Writers, Editors, and 
+							Publishers for Online, Newspaper, and Magazine Journalsm. 
+							Others can become Visual, Broadcast, and Investigative Journalists.
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/dja/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /> -->
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- **************************************************************************************** -->
+
+<div class="modal" id="myModal7" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /> -->
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/3DigitalFilm/DF01.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            Join the ranks of the new breed of digital
+							filmmakers, and tell your story through
+							digital technologies. This program centers
+							on the process of film production and covers
+							narrative featured film, documentary film,
+							and experimental film.
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/df/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal8"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal8" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal7"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/3DigitalFilm/DF02.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            This program teach students to have the ability
+							to review, interpret, critique, and analyze films.
+							To use the current technologies, tools, and techniques
+							for film production, to work independently and/or in teams,
+							and many more...
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/df/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal9"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal9" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal8"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/3DigitalFilm/DF03.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            Graduates of this program can become Film Practitioners from
+							Movies to Television and apply for Film Production Positions such as
+							Director, Editor, Screen Writer, Talent Manager, and even Acting.
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/df/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /> -->
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- **************************************************************************************** -->
+
+<div class="modal" id="myModal10" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /> -->
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/4BroadcastMedia/BM01.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            Mapúa's Broadcast Media allows students to experience and learn 
+							actual radio and television production for news programs, public affairs, 
+							and creative shows. You will also be trained in the transmission of news, information, 
+							and concepts with focus on digital technology for broadcasting productions, news gathering,
+							reporting, and delivery methods in new multimedia platforms.
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/bma/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal11"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal11" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal10"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/4BroadcastMedia/BM02.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            This program teach students to have the ability
+							to select relevant news and information for broadcasting, learning
+							broadcasting language and styles, techniques of audio and video
+							recording, many more...
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/bma/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal12"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal12" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal11"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/4BroadcastMedia/BM03.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            Graduates of this program can become Broadcast Practitioners
+							such as Televsion or Radio Anchromen, Hosts, Newscasters,
+							Reporters, Commentators, Disc Jockeys (DJs), among others.
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/bma/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /> -->
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- **************************************************************************************** -->
+
+<div class="modal" id="myModal13" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /> -->
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/5AdvertisingDesign/AD01.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            This program is for creative geniuses who have a knack for promoting and selling ideas. 
+							It trains students to effectively promote products and services and to learn about brand 
+							communication and design solutions through visual, verbal, and written digital media.
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/ada/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal14"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal14" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal13"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/5AdvertisingDesign/AD02.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            This program teach students to have the ability
+							to use a range of computer graphics technology, editing,
+							vector graphics, web design, and video editing, understanding
+							market sementation and consumerism, appling advertising
+							principles, knowing the target market, and many more...
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/ada/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal15"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal15" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal14"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/5AdvertisingDesign/AD03.png" width="100%" class="mb-4" />
+                        <h3 class="h5">
+                            Graduates of this program can become Advertising Artists,
+							Concept Artists, Art and/or Creative Directors. As well as
+							positions in Publishing, Fashion, Movie and Video Productions,
+							and Animation Productions.
+							<br />
+                            <br />
+                            <a href="http://media-studies.mapua.edu.ph/ada/program" target="_blank" style="color: #fcdb04;">Learn More</a>
+                        </h3>
+                    </div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /> -->
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- **************************************************************************************** -->
+
+<div class="modal" id="myModal16" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /> -->
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/Campus/01.png" width="100%" class="mb-4" />
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal17"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal17" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal16"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/Campus/02.jpg" width="100%" class="mb-4" />
+                    </div>
+                    <div class="col-1">
+                        <!-- <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal15"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a> -->
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- **************************************************************************************** -->
+
+<div class="modal" id="myModal18" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /> -->
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/Equipment/01.jpg" width="100%" class="mb-4" />
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal19"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal19" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal18"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/Equipment/02.png" width="100%" class="mb-4" />
+                    </div>
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal20"><img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal20" style="background-color: transparent; border-style: none;">
+    <div class="modal-dialog modal-xl" style="background-color: transparent; border-style: none;">
+        <div class="modal-content" style="background-color: transparent; border-style: none;">
+            <div class="modal-body text-center text-white" style="background-color: transparent; border-style: none;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <!-- <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center"> -->
+                    <div class="col-1">
+                        <br><br><br><br><br><br><br><br><a href="" data-bs-toggle="modal" data-bs-target="#myModal19"><img src="assets/GalleryBack_Static.png" width="35%" class="backbtn" /></a>
+                    </div>
+                    <div class="col-8">
+                        <img id="imagemodal" src="images/Equipment/03.png" width="100%" class="mb-4" />
+                    </div>
+                    <div class="col-1 d-flex my-auto d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/GalleryForward_Static.png" width="35%" class="frontbtn" /> -->
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- **************************************************************************************** -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+    // Videos
+
+    function changevid(buttonlink) { 
+        document.getElementById('change').src = buttonlink;
+    }
+
+    // Gallery Buttons Click
+
+    $("#gallery1").on("hide.bs.collapse", function () {
+        if(document.getElementById('change').src.split("/").slice(-2).join("/") == "videos/MAbanner.mp4")
+            changevid('videos/mainbanner.mp4');
+        // if($(".show").length == 1) changevid('videos/mainbanner.mp4');
+        $(".gallerybtn1").attr("src", "assets/MAbutton_static.png");
+        setTimeout(function () {
+            $("#content").css("background-color", "#3a3a3a");
+        }, 200);
+    });
+    $("#gallery1").on("show.bs.collapse", function () {
+        changevid('videos/MAbanner.mp4');
+        $(".gallerybtn1").attr("src", "assets/MAbutton_chosen.png");
+        $("#content").css("background-color", "#000000");
+    });
+
+    $("#gallery2").on("hide.bs.collapse", function () {
+        if(document.getElementById('change').src.split("/").slice(-2).join("/") == "videos/DJbanner.mp4")
+            changevid('videos/mainbanner.mp4');
+        $(".gallerybtn2").attr("src", "assets/DJbutton_static.png");
+        setTimeout(function () {
+            $("#content").css("background-color", "#3a3a3a");
+        }, 200);
+    });
+    $("#gallery2").on("show.bs.collapse", function () {
+        changevid('videos/DJbanner.mp4');
+        $(".gallerybtn2").attr("src", "assets/DJbutton_chosen.png");
+        $("#content").css("background-color", "#000000");
+    });
+
+    $("#gallery3").on("hide.bs.collapse", function () {
+        if(document.getElementById('change').src.split("/").slice(-2).join("/") == "videos/DFbanner.mp4")
+            changevid('videos/mainbanner.mp4');
+        $(".gallerybtn3").attr("src", "assets/DFbutton_static.png");
+        setTimeout(function () {
+            $("#content").css("background-color", "#3a3a3a");
+        }, 200);
+    });
+    $("#gallery3").on("show.bs.collapse", function () {
+        changevid('videos/DFbanner.mp4');
+        $(".gallerybtn3").attr("src", "assets/DFbutton_chosen.png");
+        $("#content").css("background-color", "#000000");
+    });
+
+    $("#gallery4").on("hide.bs.collapse", function () {
+        if(document.getElementById('change').src.split("/").slice(-2).join("/") == "videos/BMbanner.mp4")
+            changevid('videos/mainbanner.mp4');
+        $(".gallerybtn4").attr("src", "assets/BMbutton_static.png");
+        setTimeout(function () {
+            $("#content").css("background-color", "#3a3a3a");
+        }, 200);
+    });
+    $("#gallery4").on("show.bs.collapse", function () {
+        changevid('videos/BMbanner.mp4');
+        $(".gallerybtn4").attr("src", "assets/BMbutton_chosen.png");
+        $("#content").css("background-color", "#000000");
+    });
+
+    $("#gallery5").on("hide.bs.collapse", function () {
+        if(document.getElementById('change').src.split("/").slice(-2).join("/") == "videos/ADbanner.mp4")
+            changevid('videos/mainbanner.mp4');
+        $(".gallerybtn5").attr("src", "assets/ADbutton_static.png");
+        setTimeout(function () {
+            $("#content").css("background-color", "#3a3a3a");
+        }, 200);
+    });
+
+    $("#gallery5").on("show.bs.collapse", function () {
+        changevid('videos/ADbanner.mp4');
+        $(".gallerybtn5").attr("src", "assets/ADbutton_chosen.png");
+        $("#content").css("background-color", "#000000");
+    });
+    
+
+    // Gallery Buttons Hover
+
+    $(".gallerybtn1").hover(
+        function () {
+            if ($(this).attr("src") == "assets/MAbutton_static.png") $(this).attr("src", "assets/MAbutton_hover.png");
+        },
+        function () {
+            if ($(this).attr("src") == "assets/MAbutton_chosen.png") $(this).attr("src", "assets/MAbutton_chosen.png");
+            else $(this).attr("src", "assets/MAbutton_static.png");
+        }
+    );
+
+    $(".gallerybtn2").hover(
+        function () {
+            if ($(this).attr("src") == "assets/DJbutton_static.png") $(this).attr("src", "assets/DJbutton_hover.png");
+        },
+        function () {
+            if ($(this).attr("src") == "assets/DJbutton_chosen.png") $(this).attr("src", "assets/DJbutton_chosen.png");
+            else $(this).attr("src", "assets/DJbutton_static.png");
+        }
+    );
+
+    $(".gallerybtn3").hover(
+        function () {
+            if ($(this).attr("src") == "assets/DFbutton_static.png") $(this).attr("src", "assets/DFbutton_hover.png");
+        },
+        function () {
+            if ($(this).attr("src") == "assets/DFbutton_chosen.png") $(this).attr("src", "assets/DFbutton_chosen.png");
+            else $(this).attr("src", "assets/DFbutton_static.png");
+        }
+    );
+
+    $(".gallerybtn4").hover(
+        function () {
+            if ($(this).attr("src") == "assets/BMbutton_static.png") $(this).attr("src", "assets/BMbutton_hover.png");
+        },
+        function () {
+            if ($(this).attr("src") == "assets/BMbutton_chosen.png") $(this).attr("src", "assets/BMbutton_chosen.png");
+            else $(this).attr("src", "assets/BMbutton_static.png");
+        }
+    );
+
+    $(".gallerybtn5").hover(
+        function () {
+            if ($(this).attr("src") == "assets/ADbutton_static.png") $(this).attr("src", "assets/ADbutton_hover.png");
+        },
+        function () {
+            if ($(this).attr("src") == "assets/ADbutton_chosen.png") $(this).attr("src", "assets/ADbutton_chosen.png");
+            else $(this).attr("src", "assets/ADbutton_static.png");
+        }
+    );
+
+    // Social Media Button
+
+    $("#instapic").hover(
+        function () {
+            $(this).attr("src", "assets/Insta_Hover.png");
+        },
+        function () {
+            $(this).attr("src", "assets/Insta_Static.png");
+        }
+    );
+
+    $("#fbpic").hover(
+        function () {
+            $(this).attr("src", "assets/Fb_Hover.png");
+        },
+        function () {
+            $(this).attr("src", "assets/Fb_Static.png");
+        }
+    );
+
+    // Apply Now Button
+
+    $("#applynowbtn").hover(
+        function () {
+            $(this).attr("src", "assets/ApplyNow_Hover.png");
+        },
+        function () {
+            $(this).attr("src", "assets/ApplyNow_Static.png");
+        }
+    );
+
+    // Gallery Return Button
+
+    $(".gallerybtn6").hover(
+        function () {
+            $(this).attr("src", "assets/return_hover.png");
+        },
+        function () {
+            $(this).attr("src", "assets/return_static.png");
+        }
+    );
+
+    // Gallery Back Button
+
+    $(".backbtn").hover(
+        function () {
+            $(this).attr("src", "assets/GalleryBack_Hover.png");
+        },
+        function () {
+            $(this).attr("src", "assets/GalleryBack_Static.png");
+        }
+    );
+
+    // Gallery Front Button
+
+    $(".frontbtn").hover(
+        function () {
+            $(this).attr("src", "assets/GalleryForward_Hover.png");
+        },
+        function () {
+            $(this).attr("src", "assets/GalleryForward_Static.png");
+        }
+    );
+
+    // Modal
+
+    $('.modal').on('show.bs.modal', function () {
+	    $('.modal').not($(this)).each(function () {
+	        $(this).modal('hide');
+	    });
+	});
+</script>
